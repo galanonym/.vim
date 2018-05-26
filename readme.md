@@ -99,7 +99,8 @@ Replace
 
     r - replace one char
     R - replace mode, typeover
-        <backspace> - restore original character from before typeover
+    <backspace> - restore original character from before typeover
+    :5,12s/foo/bar/g - replace all foo with bar between lines 5 and 12
 
 Copy/Paste
 
@@ -128,9 +129,6 @@ Search
     ? - start searching up
     * - find next word that is same as word on cursor (fast search)
     # - find prev word that is same as word on cursor (fast search)
-
-Replace
-    :5,12s/foo/bar/g - replace all foo with bar between lines 5 and 12
 
 Undo/Repeat
 
