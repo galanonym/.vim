@@ -2,7 +2,7 @@ call plug#begin()
 Plug 'tpope/vim-sensible' "sensible defaults
 Plug 'tpope/vim-unimpaired' "use [ and ] commands
 Plug 'tpope/vim-commentary' "use gcc to comment
-Plug 'crusoexia/vim-monokai' "colorscheme
+Plug 'morhetz/gruvbox' "colorscheme
 Plug 'easymotion/vim-easymotion' "better line jumps
 call plug#end()
 
@@ -26,12 +26,15 @@ nnoremap <F3> :buffers<CR>:buffer<Space>
 "THEME
 set number "line numbers
 set cursorline "highlight line at cursor position
-
-"COLORSCHEME
 syntax on "syntax highlight
-colorscheme monokai
 "matching bracets underlined instead of cursor changing
 hi MatchParen cterm=underline ctermbg=none ctermfg=none
+
+"COLORSCHEME
+set background=dark "dark gruvbox theme
+let g:gruvbox_italic=1 "enable italic for gruvbox, must be before colorscheme
+let g:gruvbox_contrast_dark='hard' "darker gruvbox
+colorscheme gruvbox
 
 "TABS
 set expandtab "spaces instead of tabs
