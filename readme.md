@@ -1,6 +1,7 @@
 Installation
 
-    git clone --recursive https://github.com/galanonym/.vim.git
+    git clone https://github.com/galanonym/.vim.git
+    :PlugInstall (on first vim run)
 
 VIM training/shortcut sheet
 Train fast throu these to warmup in vim
