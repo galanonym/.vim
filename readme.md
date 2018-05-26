@@ -89,6 +89,7 @@ Deletion
     dap - delete a paragraph (lines not seperated by empty line)
 
 Change
+
     4s - change next 4 characters
     cw - change word
     3cw - change three words
