@@ -15,8 +15,9 @@ set nobackup "get rid of annoying ~file
 set nowb
 set noswapfile
 
-"ESC
+"MAP
 inoremap jj <ESC>
+nmap <F2> -
 
 "NETRW
 let g:netrw_liststyle = 3 "tree list style

@@ -10,17 +10,15 @@ Special (non default bindings)
 
     jj - same as ESC
     <space> - easymotion jump
-    - - open Netrw via vim-vinegar
+    <F2> - open Netrw via vim-vinegar
     <F3> - list & jump buffers
 
 Buffers
 
     <ctrl>-^ - jump between last two buffers
     :bd - delete/close current buffer
-    :bn - go to next buffer
-    :bp - go to previous buffer
-    :ls - list open buffers
-    :b1 - go to buffer number #1 on the list
+    ]b - next buffer
+    [b - prev buffer
 
 Netrw
 
@@ -33,9 +31,6 @@ Sensible
     <c-l> - clear highlighted search results
 
 Unimpaired
-
-    ]b - next buffer
-    [b - prev buffer
 
     [<space> - new line over (can add count before)
     ]<space> - new line under
