@@ -47,4 +47,4 @@ set hlsearch "highlight stays after search
 
 "EASYMOTION
 "two characters easymotion line jumps
-nmap <Space> <Plug>(easymotion-s2)
+nmap <Space> <Plug>(easymotion-s)
