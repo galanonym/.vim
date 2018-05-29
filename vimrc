@@ -2,6 +2,7 @@ call plug#begin()
 Plug 'tpope/vim-sensible' "sensible defaults
 Plug 'tpope/vim-unimpaired' "use [ and ] commands
 Plug 'tpope/vim-commentary' "use gcc to comment
+Plug 'tpope/vim-vinegar' "extend netrw file browser
 Plug 'morhetz/gruvbox' "colorscheme
 Plug 'easymotion/vim-easymotion' "better line jumps
 call plug#end()
@@ -18,7 +19,7 @@ set noswapfile
 inoremap jj <ESC>
 
 "NETRW
-nmap <F2> :Exp<CR>
+let g:netrw_liststyle = 3 "tree list style
 
 "BUFFERS
 nnoremap <F3> :buffers<CR>:buffer<Space>

@@ -9,8 +9,8 @@ Train fast throu these to warmup in vim
 Special (non default bindings)
 
     jj - same as ESC
-    <space> - easymotion 2 character jump
-    <F2> - open Netrw
+    <space> - easymotion jump
+    - - open Netrw via vim-vinegar
     <F3> - list & jump buffers
 
 Buffers
