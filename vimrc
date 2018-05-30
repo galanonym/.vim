@@ -2,8 +2,8 @@ call plug#begin()
 Plug 'tpope/vim-sensible' "sensible defaults
 Plug 'tpope/vim-unimpaired' "use [ and ] commands
 Plug 'tpope/vim-commentary' "use gcc to comment
-Plug 'morhetz/gruvbox' "colorscheme
 Plug 'easymotion/vim-easymotion' "better line jumps
+Plug 'morhetz/gruvbox' "colorscheme
 call plug#end()
 
 "BASICS
@@ -17,12 +17,10 @@ set noswapfile
 "MAP
 inoremap jj <ESC>
 nmap <F2> :Explore<CR>
+nnoremap <F3> :buffers<CR>:buffer<Space>
 
 "NETRW
 let g:netrw_liststyle = 3 "tree list style
-
-"BUFFERS
-nnoremap <F3> :buffers<CR>:buffer<Space>
 
 "THEME
 set number "line numbers
