@@ -33,7 +33,6 @@ hi MatchParen cterm=underline ctermbg=none ctermfg=none
 set termguicolors "add 256 color support
 colorscheme badwolf
 
-
 "TABS
 set expandtab "spaces instead of tabs
 set shiftwidth=2 "one tab 2 spaces

@@ -20,12 +20,11 @@ Buffers
     ]b - next buffer
     [b - prev buffer
 
-Netrw
+Netrw (inside)
 
-    :Exp - open file explorer
     <CR> - open directory / file
     :bd - close file exprorer
-    :Ntree - choose folder and close others
+    gn - make directory under cursor top of tree
 
 Sensible
 
