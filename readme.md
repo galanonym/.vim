@@ -25,6 +25,7 @@ Netrw
     :Exp - open file explorer
     <CR> - open directory / file
     :bd - close file exprorer
+    :Ntree - choose folder and close others
 
 Sensible
 

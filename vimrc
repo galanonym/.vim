@@ -3,7 +3,7 @@ Plug 'tpope/vim-sensible' "sensible defaults
 Plug 'tpope/vim-unimpaired' "use [ and ] commands
 Plug 'tpope/vim-commentary' "use gcc to comment
 Plug 'easymotion/vim-easymotion' "better line jumps
-Plug 'morhetz/gruvbox' "colorscheme
+Plug 'sjl/badwolf' "colorscheme
 call plug#end()
 
 "BASICS
@@ -30,10 +30,9 @@ syntax on "syntax highlight
 hi MatchParen cterm=underline ctermbg=none ctermfg=none
 
 "COLORSCHEME
-set background=dark "dark gruvbox theme
-let g:gruvbox_italic=1 "enable italic for gruvbox, must be before colorscheme
-let g:gruvbox_contrast_dark='hard' "darker gruvbox
-colorscheme gruvbox
+set termguicolors "add 256 color support
+colorscheme badwolf
+
 
 "TABS
 set expandtab "spaces instead of tabs
