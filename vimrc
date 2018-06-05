@@ -1,9 +1,9 @@
 call plug#begin()
+Plug 'sjl/badwolf' "colorscheme
 Plug 'tpope/vim-sensible' "sensible defaults
 Plug 'tpope/vim-unimpaired' "use [ and ] commands
 Plug 'tpope/vim-commentary' "use gcc to comment
 Plug 'easymotion/vim-easymotion' "better line jumps
-Plug 'sjl/badwolf' "colorscheme
 call plug#end()
 
 "BASICS
