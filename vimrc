@@ -20,9 +20,6 @@ inoremap jj <ESC>
 nmap <F2> :Explore<CR>
 nnoremap <F3> :buffers<CR>:buffer<Space>
 
-"NETRW
-let g:netrw_liststyle = 3 "tree list style
-
 "THEME
 set number "line numbers
 set cursorline "highlight line at cursor position
@@ -42,6 +39,12 @@ set tabstop=2
 "SEARCH
 set showmatch "highlight search
 set hlsearch "highlight stays after search
+
+"FIND
+set path+=** "adds recursive search to :find command
+
+"NETRW
+let g:netrw_liststyle = 3 "tree list style
 
 "EASYMOTION
 "two characters easymotion line jumps

@@ -9,20 +9,32 @@ Train fast throu these to warmup in vim
 Special (non default bindings)
 
     jj - same as ESC
-    <space> - easymotion jump
+    <Space> - easymotion jump
     <F2> - open Netrw via vim-vinegar
     <F3> - list & jump buffers
 
+Find
+
+    :find xxx - fuzzy find a file where xxx is part of the name
+    (wildmenu) - when wildmenu opens use <t> and <t-s> to choose
+
+Autocomplete
+
+    <c-n> - open autocomplete box, then press again to next suggestion
+    <c-p> - autocomplete box, previous suggestion
+    <c-e> - autocomplete box, exit smoothly
+    <c-x><c-f> - try to autocomplete a file path
+
 Buffers
 
-    <ctrl>-^ - jump between last two buffers
+    <c-^> - jump between last two buffers
     :bd - delete/close current buffer
     ]b - next buffer
     [b - prev buffer
 
 Netrw (inside)
 
-    <CR> - open directory / file
+    <cr> - open directory / file
     :bd - close file exprorer
     gn - make directory under cursor top of tree
 
@@ -32,8 +44,8 @@ Sensible
 
 Unimpaired
 
-    [<space> - new line over (can add count before)
-    ]<space> - new line under
+    [<Space> - new line over (can add count before)
+    ]<Space> - new line under
     
     [e - move line up
     ]e - move line down
@@ -132,7 +144,7 @@ Undo/Repeat
 
     u - undo
     U - undo all changes on this line
-    <ctrl>-r - redo 
+    <c-r> - redo 
 
 Visual
 
@@ -149,14 +161,14 @@ Indent
 
 Windows
 
-    <ctrl>-w c - close window
-    <ctrl>-w l - jump to window on right
+    <c-w> c - close window
+    <c-w> l - jump to window on right
         l, h, j, k
 
 Other
 
     . - (USEFUL) repets your last command, user it on the same line or another one.
-    <ctrl>-[ - same as esc key (useful when escaping from command line or multiple cursors)
+    <c-[> - same as esc key (useful when escaping from command line or multiple cursors)
 
 Folding
 
