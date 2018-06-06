@@ -82,6 +82,8 @@ Deletion
     df, - delete forward to comma and comma
     dt, - delete til comma but not comma
     dap - delete a paragraph (lines not seperated by empty line)
+    dit - delete everything between a html tag
+    dat - delete a html tag and everything inside
 
 Change
 
@@ -89,6 +91,7 @@ Change
     cw - change word
     3cw - change three words
     cc - change a line
+    cit - change between curren html tags
 
 Replace
 

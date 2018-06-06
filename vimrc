@@ -8,6 +8,7 @@ call plug#end()
 
 "BASICS
 set hidden "files will be hidden and not closed when buffer changes
+set clipboard=unnamedplus "use system clipboard for yank
 
 "BACKUP
 set nobackup "get rid of annoying ~file
