@@ -1,5 +1,5 @@
 call plug#begin()
-Plug 'sjl/badwolf' "colorscheme
+Plug 'gosukiwi/vim-atom-dark' "colorscheme
 Plug 'tpope/vim-sensible' "sensible defaults
 Plug 'tpope/vim-unimpaired' "use [ and ] commands
 Plug 'tpope/vim-commentary' "use gcc to comment
@@ -29,7 +29,9 @@ hi MatchParen cterm=underline ctermbg=none ctermfg=none
 
 "COLORSCHEME
 set termguicolors "add 256 color support
-colorscheme badwolf
+colorscheme atom-dark
+"remove white underline from cursorline for atom-dark theme
+hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white
 
 "TABS
 set expandtab "spaces instead of tabs
