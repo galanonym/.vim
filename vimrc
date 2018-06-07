@@ -16,7 +16,7 @@ set nowb
 set noswapfile
 
 "MAP
-inoremap jj <ESC>
+inoremap jj <Esc>
 nmap <F2> :Explore<CR>
 nnoremap <F3> :buffers<CR>:buffer<Space>
 
