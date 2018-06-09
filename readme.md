@@ -203,4 +203,5 @@ Execute commands
     :! - execute a command in command line
     :sh - fork new shell in pwd (you can $exit from it)
     :w !sudo tee % - write file without sudo (ignore warning)
+    :so $MYVIMRC - reload config without exiting vim
 
