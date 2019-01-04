@@ -47,6 +47,7 @@ set path+=** "adds recursive search to :find command
 
 "NETRW
 let g:netrw_liststyle = 3 "tree list style
+autocmd FileType netrw setl bufhidden=wipe "fix hanging buffer bug
 
 "EASYMOTION
 "two characters easymotion line jumps
