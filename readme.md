@@ -27,7 +27,7 @@ Autocomplete
 
 Buffers
 
-    <c-^> - jump between last two buffers
+    <c-6> - jump between last two buffers
     :bd - delete/close current buffer
     ]b - next buffer
     [b - prev buffer
