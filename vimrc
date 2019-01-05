@@ -8,7 +8,6 @@ call plug#end()
 
 "BASICS
 set hidden "files will be hidden and not closed when buffer changes
-set clipboard=unnamedplus "use system clipboard for yank
 
 "BACKUP
 set nobackup "get rid of annoying ~file
@@ -23,7 +22,6 @@ nnoremap <c-p> :buffers<CR>:buffer<Space>
 "THEME
 set number "line numbers
 set cursorline "highlight line at cursor position
-syntax on "syntax highlight
 "matching bracets underlined instead of cursor changing
 hi MatchParen cterm=underline ctermbg=none ctermfg=none
 
