@@ -160,15 +160,16 @@ Indent
     >3> - indent 3 lines in the same time
     < or > - (in visual-line)
 
-Windows
+Split window
 
-    <c-w> c - close window
-    <c-w> l - jump to window on right
+    :vsp - new vertical split
+    <c-w> c - close split
+    <c-w> l - jump to split on right
         l, h, j, k
 
 Other
 
-    . - (USEFUL) repets your last command, user it on the same line or another one.
+    . - repets your last command, user it on the same line or another one.
     <c-[> - same as esc key (useful when escaping from command line or multiple cursors)
 
 Folding
