@@ -18,7 +18,7 @@ set noswapfile
 "MAP
 inoremap jj <Esc>
 nmap <F2> :Explore<CR>
-nnoremap <F3> :buffers<CR>:buffer<Space>
+nnoremap <c-p> :buffers<CR>:buffer<Space>
 
 "THEME
 set number "line numbers

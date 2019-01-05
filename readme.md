@@ -11,7 +11,7 @@ Special (non default bindings)
     jj - same as ESC
     <Space> - easymotion jump
     <F2> - open Netrw via vim-vinegar
-    <F3> - list & jump buffers
+    <c-p> - list & jump buffers
 
 Find
 
