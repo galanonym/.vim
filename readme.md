@@ -118,6 +118,7 @@ Copy/Paste
     yw - yank a word
     p - paste after (paste above on line)
     P - paste before (paste above on line)
+    "+y - yank selection to clipboard
 
 Join
 
