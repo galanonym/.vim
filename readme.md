@@ -11,36 +11,36 @@ Special (non default bindings)
     jj - same as ESC
     <Space> - easymotion jump
     <F2> - open Netrw
-    <c-p> - list & jump buffers
+    <C-p> - list & jump buffers
 
 Find
 
     :find xxx - fuzzy find a file where xxx is part of the name
-    (wildmenu) - when wildmenu opens use <t> and <t-s> to choose
+    (wildmenu) - when wildmenu opens use <Tab> and <S-Tab> to choose
 
 Autocomplete
 
-    <c-n> - open autocomplete box, then press again to next suggestion
-    <c-p> - autocomplete box, previous suggestion
-    <c-e> - autocomplete box, exit smoothly
-    <c-x><c-f> - try to autocomplete a file path
+    <C-n> - open autocomplete box, then press again to next suggestion
+    <C-p> - autocomplete box, previous suggestion
+    <C-e> - autocomplete box, exit smoothly
+    <C-x><C-f> - try to autocomplete a file path
 
 Buffers
 
-    <c-6> - jump between last two buffers
+    <C-6> - jump between last two buffers
     :bd - delete/close current buffer
     ]b - next buffer
     [b - prev buffer
 
 Netrw (inside)
 
-    <cr> - open directory / file
+    <CR> - open directory / file
     :bd - close file exprorer
     gn - make directory under cursor top of tree
 
 Sensible
 
-    <c-l> - clear highlighted search results
+    <C-l> - clear highlighted search results
 
 Unimpaired
 
@@ -88,7 +88,7 @@ Deletion
     d2w - delete-two-words, operator-count-motion
     daw - delete a word, does not matter where cursor is, on whitespace deletes next word
     0D - delete content of a line
-    <c-w> - delete last word in insert mode
+    <C-w> - delete last word in insert mode
     di( - delete inside paranteses (test) {test} <test> 'test' "test"
     da( - delete a parantese (with all inside) {test} <test> 'test' "test"
     df, - delete forward to comma and comma
@@ -145,7 +145,7 @@ Undo/Repeat
 
     u - undo
     U - undo all changes on this line
-    <c-r> - redo 
+    <C-r> - redo 
 
 Visual
 
@@ -164,14 +164,14 @@ Indent
 Split window
 
     :vsp - new vertical split
-    <c-w> c - close split
-    <c-w> l - jump to split on right
+    <C-w> c - close split
+    <C-w> l - jump to split on right
         l, h, j, k
 
 Other
 
     . - repets your last command, user it on the same line or another one.
-    <c-[> - same as esc key (useful when escaping from command line or multiple cursors)
+    <C-[> - same as esc key (useful when escaping from command line or multiple cursors)
 
 Folding
 
