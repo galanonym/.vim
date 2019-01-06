@@ -104,6 +104,9 @@ Change
     3cw - change three words
     cc - change a line
     cit - change between curren html tags
+    C - change from cursor to end of line
+    s - change letter
+    S - change from beginning of a line
 
 Replace
 
@@ -207,3 +210,9 @@ Execute commands
     :w !sudo tee % - write file without sudo (ignore warning)
     :so $MYVIMRC - reload config without exiting vim
 
+Tips & Tricks
+
+    after selecting in visual selection press : to get
+    :'<,'> - means "For each line in the visual selection execute:"
+    :'<,'>normal A; - appends ; to the end of every line (normal runs a normal command)
+    :'<,'>normal i// - prepends // to every line
