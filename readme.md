@@ -37,6 +37,8 @@ Netrw (inside)
     <CR> - open directory / file
     :bd - close file exprorer
     gn - make directory under cursor top of tree
+    R - rename or move file under cursor
+    % - create new file
 
 Sensible
 
