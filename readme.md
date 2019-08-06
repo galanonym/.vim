@@ -53,6 +53,10 @@ Unimpaired
     [e - move line up
     ]e - move line down
 
+Commentary
+
+    gcc - comment out current line
+
 Movement
 
     w - move cursor forward one word
@@ -111,6 +115,7 @@ Change
     C - change from cursor to end of line
     s - change letter
     S - change from beginning of a line
+    ~ - change selection case between lower/upper
 
 Replace
 
@@ -217,6 +222,12 @@ Execute commands
     :sh - fork new shell in pwd (you can $exit from it)
     :w !sudo tee % - write file without sudo (ignore warning)
     :so $MYVIMRC - reload config without exiting vim
+
+Help
+
+    :h - open help
+    <C-]> - go to tag file in help
+    <C-T> - go back in help
 
 Tips & Tricks
 
