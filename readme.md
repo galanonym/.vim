@@ -38,6 +38,7 @@ Netrw (inside)
     :bd - close file exprorer
     gn - make directory under cursor top of tree
     R - rename or move file under cursor
+    D - delete file under cursor
     % - create new file
 
 Sensible
@@ -89,15 +90,16 @@ Deletion
     d$ - D - delete everything to the end of the line
     d2w - delete-two-words, operator-count-motion
     daw - delete a word, does not matter where cursor is, on whitespace deletes next word
+    dd - delete a whole line
     0D - delete content of a line
     <C-w> - delete last word in insert mode
     di( - delete inside paranteses (test) {test} <test> 'test' "test"
     da( - delete a parantese (with all inside) {test} <test> 'test' "test"
-    df, - delete forward to comma and comma
-    dt, - delete til comma but not comma
+    df, - delete forward to comma and comma (test, test)
+    dt, - delete til comma but not comma (test, test)
     dap - delete a paragraph (lines not seperated by empty line)
-    dit - delete everything between a html tag
-    dat - delete a html tag and everything inside
+    dit - delete everything between a html tag (<a>test</a>)
+    dat - delete a html tag and everything inside (<a>test</a>)
 
 Change
 
@@ -105,7 +107,7 @@ Change
     cw - change word
     3cw - change three words
     cc - change a line
-    cit - change between curren html tags
+    cit - change between curren html tags (<a>test</a>)
     C - change from cursor to end of line
     s - change letter
     S - change from beginning of a line
@@ -191,12 +193,16 @@ Registers
     "Ap - paste text from !append! register A
     "0p - paste from last yank command (delete dont count)
     :registers - show all 
-    ": - last command line command
+    ": - last vim command line command
     @: - execute last command (normal mode)
 
 Marks
 
-    '" - 'go to last edited mark
+    ma - set mark a on current cursor location
+    'a - jump to line marked with a
+    `a - jump to cursor position marked with a
+    `. - jump to cursor position where last change occured
+    `` - jump back to cursor position in current buffer where jumped from
 
 Macros
 
