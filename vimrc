@@ -49,4 +49,4 @@ autocmd FileType netrw setl bufhidden=wipe "fix hanging buffer bug
 
 "EASYMOTION
 "two characters easymotion line jumps
-nmap <Space> <Plug>(easymotion-s)
+map <Space> <Plug>(easymotion-s)
