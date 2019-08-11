@@ -177,6 +177,7 @@ Indent
 Split window
 
     :vsp - new vertical split
+    :sp - new horizontal split
     <C-w> c - close split
     <C-w> l - jump to split on right
         l, h, j, k
