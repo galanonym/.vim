@@ -165,6 +165,7 @@ Visual
     V - toggle visual line mode
     o - toggle cursor position (visual mode)
     = - automatically repair/filter indent on selection
+    gv - reselect last visual selection
 
 Indent
 
