@@ -96,7 +96,6 @@ Deletion
     daw - delete a word, does not matter where cursor is, on whitespace deletes next word
     dd - delete a whole line
     0D - delete content of a line
-    <C-w> - delete last word in insert mode
     di( - delete inside paranteses (test) {test} <test> 'test' "test"
     da( - delete a parantese (with all inside) {test} <test> 'test' "test"
     df, - delete forward to comma and comma (test, test)
@@ -104,6 +103,7 @@ Deletion
     dap - delete a paragraph (lines not seperated by empty line)
     dit - delete everything between a html tag (<a>test</a>)
     dat - delete a html tag and everything inside (<a>test</a>)
+    <C-w> - delete last word in insert mode
 
 Change
 
