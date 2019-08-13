@@ -81,6 +81,7 @@ Movement
 Screen Movement
 
     zz - scroll current line on screen middle
+    vat o - select a HTML tag, then jump to matching opening / closing tag
 
 Inserts
 
