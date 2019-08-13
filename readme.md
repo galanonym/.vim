@@ -167,6 +167,15 @@ Visual
     = - automatically repair/filter indent on selection
     gv - reselect last visual selection
 
+Visual Block
+
+    <C-v> - toggle visual block mode, you can select line downwards
+    $ - select to the end of every line
+    r - replace a character on every selected character
+    c - change text on every selected line
+    A - add text at the ends of selection 
+    I - add text at the beginnings of selection
+
 Indent
 
     << - indent line one tab to left
