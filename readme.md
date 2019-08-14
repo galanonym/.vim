@@ -234,16 +234,17 @@ Execute commands
     :sh - fork new shell in pwd (you can $exit from it)
     :w !sudo tee % - write file without sudo (ignore warning)
     :so $MYVIMRC - reload config without exiting vim
+    :set syntax=javascript - force usage of this syntax on open file
 
 Help
 
     :h - open help
     <C-]> - go to tag file in help
-    <C-T> - go back in help
+    <C-t> - go back in help
 
 Tips & Tricks
 
     after selecting in visual selection press : to get
-    :'<,'> - means "For each line in the visual selection execute:"
+    :'<,'> - means "Range for each line in the visual selection execute:"
     :'<,'>normal A; - appends ; to the end of every line (normal runs a normal command)
     :'<,'>normal i// - prepends // to every line
