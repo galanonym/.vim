@@ -242,9 +242,24 @@ Help
     <C-]> - go to tag file in help
     <C-t> - go back in help
 
+Range Symbols in Ex mode
+
+    :1,3 - range between row 1 to row 3
+    . - line where cursor is placed
+    'm - line containing mark m
+    $ - last line of file
+    % - entire file, shortcut for :1,$
+    '< - start of visual selection
+    '> - end of visual selection
+    :.-3,.+3 - simple aritmethics works, current line +-3 lines
+
+Ex mode commands
+
+    :1,3p - print lines in range 
+    :1,3s/Foo/Bar/g - substitute Foo for Bar on every line (g - replace all words in every line)
+    :1,3normal A; - appends ; to the end of every line (normal runs a normal command)
+    :1,3normal i// - prepends // to every line
+
 Tips & Tricks
 
-    after selecting in visual selection press : to get
-    :'<,'> - means "Range for each line in the visual selection execute:"
-    :'<,'>normal A; - appends ; to the end of every line (normal runs a normal command)
-    :'<,'>normal i// - prepends // to every line
+    (after selecting in visual selection press : to get :'<,'>)
