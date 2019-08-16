@@ -78,6 +78,9 @@ Movement
     G - bottom of file
     32G - jump to line 32
 
+    <C-o> - jump back to where cursor has been
+    <C-i> - jump forward to where the cursor has been
+
 Screen Movement
 
     zz - scroll current line on screen middle
@@ -252,14 +255,17 @@ Range Symbols in Ex mode
     '< - start of visual selection
     '> - end of visual selection
     :.-3,.+3 - simple aritmethics works, current line +-3 lines
+    /pattern/ - specify range by pattern
 
 Ex mode commands
 
     :1,3p - print lines in range 
     :1,3s/Foo/Bar/g - substitute Foo for Bar on every line (g - replace all words in every line)
+    :1,3t. - copy range TO line 3 below current line
+    :1,3m. - move range to line 3 below current line
     :1,3normal A; - appends ; to the end of every line (normal runs a normal command)
     :1,3normal i// - prepends // to every line
-
+    
 Tips & Tricks
 
     (after selecting in visual selection press : to get :'<,'>)
