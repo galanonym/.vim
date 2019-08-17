@@ -251,7 +251,7 @@ Range Symbols in Ex mode
     . - line where cursor is placed
     'm - line containing mark m
     $ - last line of file
-    % - entire file, shortcut for :1,$
+    % - entire file, shortcut for :1,$, no need for ,
     '< - start of visual selection
     '> - end of visual selection
     :.-3,.+3 - simple aritmethics works, current line +-3 lines
@@ -259,12 +259,14 @@ Range Symbols in Ex mode
 
 Ex mode commands
 
-    :1,3p - print lines in range 
+    :1,3p - print lines in range
     :1,3s/Foo/Bar/g - substitute Foo for Bar on every line (g - replace all words in every line)
     :1,3t. - copy range TO line 3 below current line
     :1,3m. - move range to line 3 below current line
     :1,3normal A; - appends ; to the end of every line (normal runs a normal command)
     :1,3normal i// - prepends // to every line
+    :1,3normal . - repeat last line (dot) operation on lines in range
+    :'<,'>normal @q - repeat makro starting at start of a line on lines in range
     
 Tips & Tricks
 
