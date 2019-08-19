@@ -156,6 +156,7 @@ Search
     ? - start searching up
     * - find next word that is same as word on cursor (fast search)
     # - find prev word that is same as word on cursor (fast search)
+    /<Up> or /<Down> - scroll through search history
 
 Undo/Repeat
 
@@ -238,6 +239,7 @@ Execute commands
     :w !sudo tee % - write file without sudo (ignore warning)
     :so $MYVIMRC - reload config without exiting vim
     :set syntax=javascript - force usage of this syntax on open file
+    :<Up> or :<Down> - scroll through command history
 
 Help
 
@@ -268,6 +270,12 @@ Ex mode commands
     :1,3normal . - repeat last line (dot) operation on lines in range
     :'<,'>normal @q - repeat makro starting at start of a line on lines in range
     
+Command-line window
+
+    q: - command-line window, edit ex-command history
+    q/ - command-line window, edit search history
+    <CR> - command-line window, execute command / search
+
 Tips & Tricks
 
     (after selecting in visual selection press : to get :'<,'>)
