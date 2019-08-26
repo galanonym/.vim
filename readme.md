@@ -200,9 +200,8 @@ Split window
     <C-w>v - new vertical split
     <C-w>s - new horizontal split (use <Tab> to find file)
     <C-w>w  - cycle bettween two splits
-    <C-w> l - jump to split on right
-        l, h, j, k
-    C-w> c - close split
+    <C-w>l - jump to split on right (works with l, h, j, k)
+    <C-w>c - close split
 
 Other
 
@@ -277,6 +276,13 @@ Ex mode commands
     :1,3normal i// - prepends // to every line
     :1,3normal . - repeat last line (dot) operation on lines in range
     :'<,'>normal @q - repeat makro starting at start of a line on lines in range
+
+Tab (Layout) Pages
+
+    :tabe {filename} - open file in a new tab
+    :gt - move to next tab
+    :gT - move to prev tab
+    :1gt - move to first tab etc.
     
 Command-line window
 
