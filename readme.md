@@ -11,7 +11,7 @@ Special (non default bindings)
     jj - same as ESC
     <Space> - easymotion jump
     <F2> - open Netrw
-    <C-p> - list & jump buffers
+    <C-p> - list & jump buffers, % is current file, # is last file, write some chars and use <Tab>
 
 Find
 
@@ -31,6 +31,13 @@ Buffers
     :bd - delete/close current buffer
     ]b - next buffer
     [b - prev buffer
+
+Argument List
+    
+    :ar - show argument list
+    :ar vimrc readme.md - add files to argument list, use <Tab> to autofill
+    ]a - next file in argument list
+    [a - prev file in argument list
 
 Netrw (inside)
 
@@ -190,11 +197,12 @@ Indent
 
 Split window
 
-    :vsp - new vertical split
-    :sp - new horizontal split
-    <C-w> c - close split
+    <C-w>v - new vertical split
+    <C-w>s - new horizontal split (use <Tab> to find file)
+    <C-w>w  - cycle bettween two splits
     <C-w> l - jump to split on right
         l, h, j, k
+    C-w> c - close split
 
 Other
 
