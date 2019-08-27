@@ -17,6 +17,7 @@ Find
 
     :find xxx - fuzzy find a file where xxx is part of the name
     (wildmenu) - when wildmenu opens use <Tab> and <S-Tab> to choose
+    (wildmenu) <Down> - use it to drill down through directories
 
 Autocomplete
 
@@ -44,9 +45,10 @@ Netrw (inside)
     <CR> - open directory / file
     :bd - close file exprorer
     gn - make directory under cursor top of tree
-    R - rename or move file under cursor
-    D - delete file under cursor
     % - create new file
+    d - create new directory
+    D - delete file/directory under cursor (remember to delete buffer later)
+    R - rename or move file under cursor
 
 Sensible
 
@@ -243,10 +245,12 @@ Execute commands
 
     :! - execute a command in command line
     :sh - fork new shell in pwd (you can $exit from it)
-    :w !sudo tee % - write file without sudo (ignore warning)
+    :w !sudo tee % - write readonly file with sudo, (press l to load back file), 
+      write to stdout, tee (unix T-pipe) it from :w to % (path of current buffer)
     :so $MYVIMRC - reload config without exiting vim
     :set syntax=javascript - force usage of this syntax on open file
     :<Up> or :<Down> - scroll through command history
+    :pwd - print working directory
 
 Help
 
@@ -276,20 +280,17 @@ Ex mode commands
     :1,3normal i// - prepends // to every line
     :1,3normal . - repeat last line (dot) operation on lines in range
     :'<,'>normal @q - repeat makro starting at start of a line on lines in range
+    (after selecting in visual selection press : to get :'<,'>)
 
 Tab (Layout) Pages
 
     :tabe {filename} - open file in a new tab
-    :gt - move to next tab
-    :gT - move to prev tab
-    :1gt - move to first tab etc.
+    gt - move to next tab
+    gT - move to prev tab
+    1gt - move to first tab etc.
     
 Command-line window
 
     q: - command-line window, edit ex-command history
     q/ - command-line window, edit search history
     <CR> - command-line window, execute command / search
-
-Tips & Tricks
-
-    (after selecting in visual selection press : to get :'<,'>)
