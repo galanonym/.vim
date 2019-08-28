@@ -68,12 +68,14 @@ Commentary
 
 Movement
 
-    w - move cursor forward one word
-    W - jump to the next meaningful code word (jump through paranteses)
+    w - forward one word
     3w - forward three words
     b - backword one word
-    e - to the end of the next word
-    ge - to the end of previous word
+    e - end of the next word
+    ge - end of previous word
+
+    W - forward one WORD (sequence of characters)
+    B - backword one WORD (sequence of characters)
 
     0 - go to the beginning of the line
     $ - go to the end of the line
@@ -90,6 +92,11 @@ Movement
     <C-o> - jump back to where cursor has been
     <C-i> - jump forward to where the cursor has been
 
+    gk - move up a display line
+    gj - move down a display line
+    g0 - move to start of display line
+    g$ - move to end of display line
+
 Screen Movement
 
     zz - scroll current line on screen middle
@@ -101,6 +108,7 @@ Inserts
     A - append at the end of the line
     o - new line and edit
     O - new line above and edit
+    ea - append at the end of current word
 
 Deletion
 
@@ -151,18 +159,21 @@ Join
 
 Line Search
 
-    fN - jump forward to first 'N' in the current line
-    3fN - jump forward to third 'N' in the current line
-    ; - repeat last jump
-    , - repeat last jump backwords
-    t) - jump forward to first ')' in the current line, stop one char before ')'
+    fx - move forward to top of first 'x' on line
+    3fx - move forward to top of third 'x' on line
+    ; - repeat last move
+    , - repeat last move backwords
+    tx - move forward till first 'x' on line (stop one char before)
+
+    Fx - move backward to top of first 'x' on line
+    Tx - move backward till first 'x' on line (stop one char before)
 
 Search
 
-    /something - use it to search for "something" string
+    /something - search for "something" string
     n - cursor to next match
     N - cursor to previous match
-    ? - start searching up
+    ?something - search upwards for "something" string
     * - find next word that is same as word on cursor (fast search)
     # - find prev word that is same as word on cursor (fast search)
     /<Up> or /<Down> - scroll through search history
