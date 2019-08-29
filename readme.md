@@ -25,7 +25,7 @@ Autocomplete
     <C-e> - autocomplete box, exit smoothly
     <C-x><C-f> - try to autocomplete a file path
 
-Buffers
+Buffers (open files)
 
     <C-6> - jump between last two buffers
     :bd - delete/close current buffer
@@ -48,6 +48,12 @@ Netrw (inside)
     d - create new directory
     D - delete file/directory under cursor (remember to delete buffer later)
     R - rename or move file under cursor
+
+    Copy:
+    jkmf - Move cursor to a file in target directory
+    mt - mark target directory (Copy/Move Tgt line shows)
+    mf - mark file that we want to copy (becomes bold)
+    mc - copy marked file
 
 Sensible
 
@@ -238,9 +244,10 @@ Registers
 
 Marks
 
-    ma - set mark a on current cursor location
-    'a - jump to line marked with a
-    `a - jump to cursor position marked with a
+    ma - set mark "a" on cursor position
+    `a - jump to cursor position marked with "a"
+    mA - set global "A" mark on cursor position 
+    `A - jump to global cursor position (in other buffer) marked with "A"
     `. - jump to cursor position where last change occured
     `` - jump back to cursor position in current buffer where jumped from
 
