@@ -88,7 +88,7 @@ Movement
     
     { or } - move to the prev/next paragraph
     ( or ) - move to the prev/next sentence
-    % - bounce between matching brackets
+    % or <S-5> - bounce between matching brackets (when inside brackets, move to first bracket)
    
     gg - top of file
     G - bottom of file
