@@ -73,25 +73,25 @@ Commentary
 
 Movement
 
-    w - forward one word
-    3w - forward three words
-    b - backword one word
-    e - end of the next word
-    ge - end of previous word
+    w - move forward one word
+    3w - move forward three words
+    b - move backword one word
+    e - move to end of the next word
+    ge - move to end of previous word
 
-    W - forward one WORD (sequence of characters)
+    W - move forward one WORD (sequence of characters)
     B - backword one WORD (sequence of characters)
 
-    0 - go to the beginning of the line
-    $ - go to the end of the line
-    ^ - first non whitespace character
+    0 - move to the beginning of the line
+    $ - move to the end of the line
+    ^ - move to first non whitespace character
     
-    { or } - move to the prev/next paragraph
-    ( or ) - move to the prev/next sentence
-    % or <S-5> - bounce between matching brackets (when inside brackets, move to first bracket)
+    { or } - jump to the prev/next paragraph
+    ( or ) - jump to the prev/next sentence
+    % or <S-5> - jump between matching brackets (when inside brackets, jump to first bracket)
    
-    gg - top of file
-    G - bottom of file
+    gg - jump to top of file
+    G - jump to bottom of file
     32G - jump to line 32
 
     <C-o> - jump back to where cursor has been
