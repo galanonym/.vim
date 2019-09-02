@@ -97,6 +97,9 @@ Movement
     <C-o> - jump back to where cursor has been
     <C-i> - jump forward to where the cursor has been
 
+    g; - jump back to where last change occured
+    g, - jump forward to where last change occured
+
     gk - move up a display line
     gj - move down a display line
     g0 - move to start of display line
@@ -114,6 +117,7 @@ Inserts
     o - new line and edit
     O - new line above and edit
     ea - append at the end of current word
+    gi - insert text at last insert location
 
 Deletion
 
@@ -225,6 +229,7 @@ Other
 
     . - repets your last command, user it on the same line or another one.
     <C-[> - same as esc key (useful when escaping from command line or multiple cursors)
+    gf - jump to filename under cursor
 
 Folding
 
@@ -246,7 +251,7 @@ Marks
 
     ma - set mark "a" on cursor position
     `a - jump to cursor position marked with "a"
-    mA - set global "A" mark on cursor position 
+    mA - set global "A" mark on cursor position (persisted between sessions)
     `A - jump to global cursor position (in other buffer) marked with "A"
     `. - jump to cursor position where last change occured
     `` - jump back to cursor position in current buffer where jumped from
