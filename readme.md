@@ -154,13 +154,19 @@ Replace
     <backspace> - restore original character from before typeover
     :5,12s/foo/bar/g - replace all foo with bar between lines 5 and 12
 
-Copy/Paste
+Yank/Put (Copy/Paste)
 
     yy - yank line (copy)
     yw - yank a word
     p - paste after (paste above on line)
     P - paste before (paste above on line)
-    "+y - yank selection to clipboard
+    "+y - yank selection to system clipboard
+    "+p - paste text from system clipboard
+    xp - move char under cursor one forward
+    (visual) p - paste and replace selected text
+    (insert) <C-r>" - paste from unnamed register inside insert mode
+    gp - paste after and place cursor after inserted text
+    gP - paste before and place cursor after inserted text
 
 Join
 
@@ -242,9 +248,10 @@ Registers
     "ap - paste from register a
     "Ayy - yank text to !append! register A
     "Ap - paste text from !append! register A
-    "0p - paste from last yank command (delete dont count)
-    :registers - show all 
+    "0p - paste from yank register (last yanked line)
+    :reg - show all registers
     ": - last vim command line command
+    ". - last inserted text
     @: - execute last command (normal mode)
 
 Marks
