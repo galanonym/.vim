@@ -250,6 +250,7 @@ Registers
     "Ap - paste text from !append! register A
     "0p - paste from yank register (last yanked line)
     :reg - show all registers
+    :reg a - show "a" register
     ": - last vim command line command
     ". - last inserted text
     @: - execute last command (normal mode)
@@ -265,10 +266,11 @@ Marks
 
 Macros
 
-    qa - begin macro recording to register a
-    q - stop recording
+    qa - begin macro recording to register "a"
+    (recording) q - stop recording
     @a - execute macro from register a
-    4@a - execute macro a four time
+    @@ - execute most recent macro
+    4@a - execute macro a four time (when a motion fails, macro execution will stop)
 
 Execute commands
 
