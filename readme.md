@@ -287,8 +287,9 @@ Marks
 
 Macros
 
-    qa - begin macro recording to register "a"
+    qa - begin recording of macro to register "a"
     (recording) q - stop recording
+    qA - begin recording of macro by appending to register "a"
     @a - execute macro from register a
     @@ - execute most recent macro
     4@a - execute macro a four time (when a motion fails, macro execution will stop)
