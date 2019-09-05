@@ -328,11 +328,11 @@ Ex mode commands
     :1,3s/Foo/Bar/g - substitute Foo for Bar on every line (g - replace all words in every line)
     :1,3t. - copy range TO line 3 below current line
     :1,3m. - move range to line 3 below current line
-    :1,3normal A; - appends ; to the end of every line (normal runs a normal command)
-    :1,3normal i// - prepends // to every line
-    :1,3normal . - repeat last line (dot) operation on lines in range
-    :'<,'>normal @q - repeat makro starting at start of a line on lines in range
-    (after selecting in visual selection press : to get :'<,'>)
+    :1,3norm A; - appends ; to the end of every line (norm runs a normal command)
+    :1,3norm i// - prepends // to every line
+    :1,3norm . - repeat last line (dot) operation on lines in range
+    :'<,'>norm @q - repeat makro starting at start of a line on lines in range
+    (visual selected) : - press to get :'<,'>
 
 Tab (Layout) Pages
 
