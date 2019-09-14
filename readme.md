@@ -10,8 +10,8 @@ Special (non default bindings)
     jj - same as ESC
     <Space> - easymotion jump
     <F2> - open Netrw
-    <Tab> - list & jump buffers with wildmenu
     <C-p> - start :find xxx command, fuzzy find part of filename
+    <C-f> - list & jump open buffers with wildmenu
 
 Wildmenu
 
