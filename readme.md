@@ -34,8 +34,12 @@ Buffers (open files)
 
 Argument List
     
-    :ar - show argument list
-    :ar vimrc readme.md - add files to argument list, use <Tab> to autofill
+    :arg - show argument list
+    :arga vimrc - add file to argument list, use <Tab> to autofill
+    :argd vimrc - delete file from argument list
+    :fir - go to first file in argument list
+    :next - go to next file in argument list
+    :prev - go to prev file in argument list
     ]a - next file in argument list
     [a - prev file in argument list
 
@@ -53,7 +57,7 @@ Netrw (inside)
     jkmf - Move cursor to a file in target directory
     mt - mark target directory (Copy/Move Tgt line shows)
     mf - mark file that we want to copy (becomes bold)
-    mc - copy marked file
+    cmc - change dir to current and copy marked file
 
 Sensible
 
