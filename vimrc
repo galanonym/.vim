@@ -19,7 +19,9 @@ set noswapfile
 "MAP
 inoremap jj <Esc>
 nmap <F2> :Explore<CR>
-nnoremap <C-p> :ls<CR>:buffer<Space>
+nnoremap <C-p> :find<Space>
+set wildcharm=<Tab> "Allow usage ow wildmenu in mappings
+nnoremap <Tab> :buffer<Space><Tab>
 
 "THEME
 set number "line numbers

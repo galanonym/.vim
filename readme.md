@@ -10,11 +10,11 @@ Special (non default bindings)
     jj - same as ESC
     <Space> - easymotion jump
     <F2> - open Netrw
-    <C-p> - list & jump buffers, % is current file, # is last file, write some chars and use <Tab>
+    <Tab> - list & jump buffers with wildmenu
+    <C-p> - start :find xxx command, fuzzy find part of filename
 
-Find
+Wildmenu
 
-    :find xxx - fuzzy find a file where xxx is part of the name
     (wildmenu) - when wildmenu opens use <Tab> and <S-Tab> to choose
     (wildmenu) <Down> - use it to drill down through directories
 
