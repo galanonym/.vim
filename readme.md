@@ -52,12 +52,7 @@ Netrw (inside)
     d - create new directory
     D - delete file/directory under cursor (remember to delete buffer later)
     R - rename or move file under cursor
-
-    Copy:
-    jkmf - Move cursor to a file in target directory
-    mt - mark target directory (Copy/Move Tgt line shows)
-    mf - mark file that we want to copy (becomes bold)
-    cmc - change dir to current and copy marked file
+    :%w path-from-pwd/file.new - copy/write entire file to new filepath
 
 Sensible
 
