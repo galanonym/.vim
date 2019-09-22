@@ -7,7 +7,7 @@
 
 Special (non default bindings)
 
-    jj - same as ESC
+    (insert) jj - same as ESC
     <Space> - easymotion jump
     <F2> - open Netrw
     <C-p> - start :find xxx command, fuzzy find part of filename
@@ -144,7 +144,9 @@ Change
     C - change from cursor to end of line
     s - change letter
     S - change from beginning of a line
-    ~ - change selection case between lower/upper
+    (visual) ~ - change selection case between lowercase and uppercase
+    (visual) u - change selection case to lowercase
+    (visual) U - change selection case to uppercase
 
 Replace
 
@@ -271,6 +273,9 @@ Macros
     @a - execute macro from register a
     @@ - execute most recent macro
     4@a - execute macro a four time (when a motion fails, macro execution will stop)
+    :'<,'>norm @a - repeat macro starting at start of a line on lines in range
+    :put a - adds line with macro from register q
+    (visual) "ay - after editing and selecting macros characters it can be yanked back to register
 
 Execute commands
 
@@ -310,7 +315,6 @@ Ex mode commands
     :1,3norm A; - appends ; to the end of every line (norm runs a normal command)
     :1,3norm i// - prepends // to every line
     :1,3norm . - repeat last line (dot) operation on lines in range
-    :'<,'>norm @q - repeat makro starting at start of a line on lines in range
     (visual selected) : - press to get :'<,'>
 
 Tab (Layout) Pages
@@ -325,3 +329,4 @@ Command-line window
     q: - command-line window, edit ex-command history
     q/ - command-line window, edit search history
     <CR> - command-line window, execute command / search
+
