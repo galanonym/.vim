@@ -2,7 +2,6 @@ call plug#begin()
 Plug 'gosukiwi/vim-atom-dark' "colorscheme
 Plug 'tpope/vim-sensible' "sensible defaults
 Plug 'tpope/vim-unimpaired' "add [ and ] commands
-Plug 'tpope/vim-surround' "add ys, cs, ds commands
 Plug 'tpope/vim-commentary' "add gcc command
 Plug 'easymotion/vim-easymotion' "better line jumps
 call plug#end()
@@ -54,6 +53,3 @@ autocmd FileType netrw setl bufhidden=delete "fix netrw hanging buffer bug
 "EASYMOTION
 "two characters easymotion line jumps
 map <Space> <Plug>(easymotion-s)
-
-"SURROUND
-let b:surround_indent=1 "try to indent after surrounding
