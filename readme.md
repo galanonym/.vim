@@ -194,6 +194,14 @@ Search
     # - find prev word that is same as word on cursor (fast search)
     /<Up> or /<Down> - scroll through search history
 
+Patterns in search
+    
+    (search) \c - Ignore case sensivity in search pattern
+    (search) \C - Force case sensivity to search pattern
+
+    (search) \v - Mode where only underscore, letters and digits are not escapable characters
+    /\v\:([0-9a-zA-z]{3}) - Search string starting with :, that has digits or letters in it with length 3
+
 Undo/Repeat
 
     u - undo
@@ -329,4 +337,3 @@ Command-line window
     q: - command-line window, edit ex-command history
     q/ - command-line window, edit search history
     <CR> - command-line window, execute command / search
-
