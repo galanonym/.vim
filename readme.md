@@ -194,13 +194,6 @@ Search
     # - find prev word that is same as word on cursor (fast search)
     /<Up> or /<Down> - scroll through search history
 
-Patterns in search
-    
-    (search) \c - Ignore case sensivity in search pattern
-    (search) \C - Force case sensivity to search pattern
-
-    (search) \v - Mode where only underscore, letters and digits are not escapable characters
-    /\v\:([0-9a-zA-z]{3}) - Search string starting with :, that has digits or letters in it with length 3
 
 Undo/Repeat
 
@@ -285,22 +278,13 @@ Macros
     :put a - adds line with macro from register q
     (visual) "ay - after editing and selecting macros characters it can be yanked back to register
 
-Execute commands
+Tab (Layout) Pages
 
-    :! - execute a command in command line
-    :sh - fork new shell in pwd (you can $exit from it)
-    :w !sudo tee % - write readonly file with sudo, (press l to load back file), 
-      write to stdout, tee (unix T-pipe) it from :w to % (path of current buffer)
-    :so $MYVIMRC - reload config without exiting vim
-    :set syntax=javascript - force usage of this syntax on open file
-    :<Up> or :<Down> - scroll through command history
-    :pwd - print working directory
-
-Help
-
-    :h - open help
-    <C-]> - go to tag file in help
-    <C-t> - go back in help
+    :tabe {filename} - open file in a new tab
+    gt - move to next tab
+    gT - move to prev tab
+    1gt - move to first tab etc.
+    
 
 Range Symbols in Ex mode
 
@@ -325,15 +309,40 @@ Ex mode commands
     :1,3norm . - repeat last line (dot) operation on lines in range
     (visual selected) : - press to get :'<,'>
 
-Tab (Layout) Pages
-
-    :tabe {filename} - open file in a new tab
-    gt - move to next tab
-    gT - move to prev tab
-    1gt - move to first tab etc.
+Search Patterns
     
+    (search) \c - Ignore case sensivity in search pattern
+    (search) \C - Force case sensivity to search pattern
+
+    (search) \v - Mode where only underscore, letters and digits are not escapable characters
+    /\v\:[0-9a-zA-z]{3} - Search string starting with :, that has digits or letters in it with length 3
+    /\v<the> - Search a word "the" do not include f.ex. "these"
+    /\vSea\zsrch - \zs helps to find/highlight every "rch" in every "Search" words
+
+Search & Replace
+
+    :%s/Foo/Bar/gc - substitute Foo for Bar in open buffer (c - ask for confirmation for every replace)
+
 Command-line window
 
     q: - command-line window, edit ex-command history
     q/ - command-line window, edit search history
     <CR> - command-line window, execute command / search
+
+General Commands
+
+    :! - execute a command in command line
+    :sh - fork new shell in pwd (you can $exit from it)
+    :w !sudo tee % - write readonly file with sudo, (press l to load back file), 
+      write to stdout, tee (unix T-pipe) it from :w to % (path of current buffer)
+    :so $MYVIMRC - reload config without exiting vim
+    :set syntax=javascript - force usage of this syntax on open file
+    :<Up> or :<Down> - scroll through command history
+    :pwd - print working directory
+
+Help
+
+    :h - open help
+    <C-]> - go to tag file in help
+    <C-t> - go back in help
+
