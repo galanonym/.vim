@@ -87,8 +87,8 @@ Movement
     
     { or } - jump to the prev/next paragraph
     ( or ) - jump to the prev/next sentence
-    % or <S-5> - jump between matching brackets (when inside brackets, jump to first bracket)
-   
+    % or <S-5> - jump between matching brackets or tags (when inside brackets, jump to first bracket)
+
     gg - jump to top of file
     G - jump to bottom of file
     32G - jump to line 32
