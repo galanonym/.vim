@@ -187,6 +187,8 @@ Line Search
 Search
 
     /something - search for "something" string
+    /something/e - search for "something" string place cursor at the end of match
+    //e - repeat last normal search, but place cursor at the end of match
     n - cursor to next match
     N - cursor to previous match
     ?something - search upwards for "something" string
