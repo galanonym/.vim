@@ -70,6 +70,30 @@ Commentary
 
     gcc - comment out current line
 
+Targets
+
+    those targets work on pairs of ( { [ < t ' " `
+
+    ci( - change inside of pair, if cursor outside, change in next inside of pair
+    cI( - change inside pair preserving whitespace ( test )
+    cin( - change inside next pair of () (test) (test)
+    cil( - change inside last pair of () (test) (test)
+
+    ca( - change all pair, if cursor outside, change next all pair
+    can( - change all pair, that is next
+    cal( - change all pair, that is previous
+
+    'test' `test` "test"
+
+    cia - change inside argument
+    cIa - change inside argument preserving whitespace
+    cina - change inside next argument
+    cila - change inside last argument
+
+    daa - delete all argument with comma and whitespace around
+
+    (test, test, test)
+
 Movement
 
     w - move forward one word
@@ -187,6 +211,8 @@ Line Search
 Search
 
     /something - search for "something" string
+    /something/e - search for "something" string place cursor at the end of match
+    //e - repeat last normal search, but place cursor at the end of match
     n - cursor to next match
     N - cursor to previous match
     ?something - search upwards for "something" string
