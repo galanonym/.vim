@@ -53,3 +53,7 @@ autocmd FileType netrw setl bufhidden=delete "fix netrw hanging buffer bug
 "EASYMOTION
 "two characters easymotion line jumps
 map <Space> <Plug>(easymotion-s)
+
+"ENABLE PROJECT VIMRC FILE
+set exrc "execute .vimrc in project location
+set secure "do not allow dangerous commands
