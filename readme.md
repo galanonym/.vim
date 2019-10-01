@@ -3,6 +3,12 @@
     git clone https://github.com/galanonym/.vim.git
     :PlugInstall (on first vim run)
 
+# Add project specific config
+
+    cd ~/project/directory
+    ln -s ~/.vim/vimrc.php .vimrc
+
+
 ## VIM training / shortcut sheet
 
 Special (non default bindings)
