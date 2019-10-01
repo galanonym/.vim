@@ -3,6 +3,7 @@ Plug 'gosukiwi/vim-atom-dark' "colorscheme
 Plug 'tpope/vim-sensible' "sensible defaults
 Plug 'tpope/vim-unimpaired' "add [ and ] commands
 Plug 'tpope/vim-commentary' "add gcc command
+Plug 'tpope/vim-surround' "add surround commands
 Plug 'wellle/targets.vim' "better targets
 Plug 'easymotion/vim-easymotion' "better line jumps
 call plug#end()
@@ -21,6 +22,10 @@ inoremap jj <Esc>
 nmap <F2> :Explore<CR>
 nnoremap <C-p> :find<Space>
 nnoremap <C-f> :buffer<Space><Tab>
+"Fix & to preserve flags in normal mode
+nnoremap & :&&<CR> 
+"Fix & to preserve flags in visual mode
+xnoremap & :&&<CR> 
 "use <C-j> for inserting new line in normal mode
 nnoremap <NL> i<CR><ESC> 
 

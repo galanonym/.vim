@@ -64,6 +64,27 @@ Sensible
 
     <C-l> - clear highlighted search results
 
+Surround
+
+    ysiw] - you surround around inside of word
+    ysiw[ - you [ surround ] around inside of word
+    ysiw<p> - you <p>surround</p> around inside of word
+    yss[ - you surround whole sentence with [
+
+    b ) - bracket
+    B } - brace bracket
+    r ] - rectangular
+    a > - a sign
+
+    (visual) S( - surround with (
+
+    cs[' - change surrounding from [ to '
+    cs[<p> - change surroundig from [ to <p></p>
+    cst<b> - change surrounding item from tag <p></p> to <b></b>
+
+    dst - delete surrounding <tag>
+    ds[ - delete surrounding [
+
 Unimpaired
 
     [<Space> - new line over (can add count before)
@@ -183,7 +204,6 @@ Replace
     r - replace one char
     R - replace mode, typeover
     <backspace> - restore original character from before typeover
-    :5,12s/foo/bar/g - replace all foo with bar between lines 5 and 12
 
 Yank/Put (Copy/Paste)
 
@@ -195,7 +215,7 @@ Yank/Put (Copy/Paste)
     "+p - paste text from system clipboard
     xp - move char under cursor one forward
     (visual) p - paste and replace selected text
-    (insert) <C-r>" - paste from unnamed register inside insert mode
+    (insert) <C-r>0 - paste from 0 register (last yank) inside insert mode
     gp - paste after and place cursor after inserted text
     gP - paste before and place cursor after inserted text
 
@@ -351,9 +371,14 @@ Search Patterns
     /\v<the> - Search a word "the" do not include f.ex. "these"
     /\vSea\zsrch - \zs helps to find/highlight every "rch" in every "Search" words
 
-Search & Replace
+Substitute
 
+    :5,12s/Foo/Bar/g - replace all Foo with Bar between lines 5 and 12 (g - replace all words in every line)
     :%s/Foo/Bar/gc - substitute Foo for Bar in open buffer (c - ask for confirmation for every replace)
+    :%s/<C-r>0/Bar/gc - substitute last yank with Bar in open buffer
+    & - repeat last substitution on current line
+    (visual) & - repeat substitution on chosen lines
+    g& - repeat substitution on open buffer
 
 Command-line window
 
