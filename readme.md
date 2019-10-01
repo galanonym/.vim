@@ -58,6 +58,27 @@ Sensible
 
     <C-l> - clear highlighted search results
 
+Surround
+
+    ysiw] - you surround around inside of word
+    ysiw[ - you [ surround ] around inside of word
+    ysiw<p> - you <p>surround</p> around inside of word
+    yss[ - you surround whole sentence with [
+
+    b ) - bracket
+    B } - brace bracket
+    r ] - rectangular
+    a > - a sign
+
+    (visual) S( - surround with (
+
+    cs[' - change surrounding from [ to '
+    cs[<p> - change surroundig from [ to <p></p>
+    cst<b> - change surrounding item from tag <p></p> to <b></b>
+
+    dst - delete surrounding <tag>
+    ds[ - delete surrounding [
+
 Unimpaired
 
     [<Space> - new line over (can add count before)

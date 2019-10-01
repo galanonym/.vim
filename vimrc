@@ -3,6 +3,7 @@ Plug 'gosukiwi/vim-atom-dark' "colorscheme
 Plug 'tpope/vim-sensible' "sensible defaults
 Plug 'tpope/vim-unimpaired' "add [ and ] commands
 Plug 'tpope/vim-commentary' "add gcc command
+Plug 'tpope/vim-surround' "add surround commands
 Plug 'wellle/targets.vim' "better targets
 Plug 'easymotion/vim-easymotion' "better line jumps
 call plug#end()
