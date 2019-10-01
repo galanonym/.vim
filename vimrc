@@ -20,8 +20,12 @@ set noswapfile
 inoremap jj <Esc>
 nmap <F2> :Explore<CR>
 nnoremap <C-p> :find<Space>
-set wildcharm=<Tab> "Allow usage ow wildmenu in mappings
 nnoremap <C-f> :buffer<Space><Tab>
+"use <C-j> for inserting new line in normal mode
+nnoremap <NL> i<CR><ESC> 
+
+"WILDMENU
+set wildcharm=<Tab> "Allow usage of wildmenu in mappings
 
 "THEME
 set number "line numbers
