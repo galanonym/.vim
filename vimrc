@@ -23,6 +23,10 @@ nmap <F2> :Explore<CR>
 nnoremap <C-p> :find<Space>
 set wildcharm=<Tab> "Allow usage ow wildmenu in mappings
 nnoremap <C-f> :buffer<Space><Tab>
+"Fix & to preserve flags in normal mode
+nnoremap & :&&<CR> 
+"Fix & to preserve flags in visual mode
+xnoremap & :&&<CR> 
 
 "THEME
 set number "line numbers
@@ -55,3 +59,7 @@ autocmd FileType netrw setl bufhidden=delete "fix netrw hanging buffer bug
 "EASYMOTION
 "two characters easymotion line jumps
 map <Space> <Plug>(easymotion-s)
+
+"ENABLE PROJECT VIMRC FILE
+set exrc "execute .vimrc in project location
+set secure "do not allow dangerous commands
