@@ -22,6 +22,10 @@ nmap <F2> :Explore<CR>
 nnoremap <C-p> :find<Space>
 set wildcharm=<Tab> "Allow usage ow wildmenu in mappings
 nnoremap <C-f> :buffer<Space><Tab>
+"Fix & to preserve flags in normal mode
+nnoremap & :&&<CR> 
+"Fix & to preserve flags in visual mode
+xnoremap & :&&<CR> 
 
 "THEME
 set number "line numbers
