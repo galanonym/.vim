@@ -19,6 +19,12 @@ Special (non default bindings)
     <C-p> - start :find xxx command, fuzzy find part of filename
     <C-f> - list & jump open buffers with wildmenu
 
+Help
+
+    :h - open help
+    <C-]> - go to tag file in help
+    <C-t> - go back in help
+
 Wildmenu
 
     (wildmenu) - when wildmenu opens use <Tab> and <S-Tab> to choose
@@ -46,8 +52,6 @@ Argument List
     :fir - go to first file in argument list
     :next - go to next file in argument list
     :prev - go to prev file in argument list
-    ]a - next file in argument list
-    [a - prev file in argument list
 
 Netrw (inside)
 
@@ -370,6 +374,7 @@ Search Patterns
     /\v\:[0-9a-zA-z]{3} - Search string starting with :, that has digits or letters in it with length 3
     /\v<the> - Search a word "the" do not include f.ex. "these"
     /\vSea\zsrch - \zs helps to find/highlight every "rch" in every "Search" words
+    /\vSea\zerch - \ze helps to find/highlight every "Sea" in every "Search" words
 
 Substitute
 
@@ -396,10 +401,3 @@ General Commands
     :set syntax=javascript - force usage of this syntax on open file
     :<Up> or :<Down> - scroll through command history
     :pwd - print working directory
-
-Help
-
-    :h - open help
-    <C-]> - go to tag file in help
-    <C-t> - go back in help
-

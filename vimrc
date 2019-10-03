@@ -1,12 +1,33 @@
 call plug#begin()
 Plug 'gosukiwi/vim-atom-dark' "colorscheme
 Plug 'tpope/vim-sensible' "sensible defaults
-Plug 'tpope/vim-unimpaired' "add [ and ] commands
 Plug 'tpope/vim-commentary' "add gcc command
 Plug 'tpope/vim-surround' "add surround commands
 Plug 'wellle/targets.vim' "better targets
 Plug 'easymotion/vim-easymotion' "better line jumps
 call plug#end()
+
+"MAP
+inoremap jj <Esc>
+nmap <F2> :Explore<CR>
+nnoremap <C-p> :find<Space>
+nnoremap <C-f> :buffer<Space><Tab>
+"use <C-j> for inserting new line in normal mode
+nnoremap <NL> i<CR><ESC> 
+
+"UNIMPAIRED
+nnoremap [b :bprev<CR>
+nnoremap ]b :bnext<CR>
+nnoremap [<Space> O<Esc>j
+nnoremap ]<Space> o<Esc>k
+nnoremap [e ddkP 
+nnoremap ]e ddp
+
+"REPEAT SUBSTITUTION FIX
+"Fix & to preserve flags in normal mode
+nnoremap & :&&<CR> 
+"Fix & to preserve flags in visual mode
+xnoremap & :&&<CR> 
 
 "BASICS
 set hidden "files will be hidden and not closed when buffer changes
@@ -16,18 +37,6 @@ set scrolloff=999
 set nobackup "get rid of annoying ~file
 set nowb
 set noswapfile
-
-"MAP
-inoremap jj <Esc>
-nmap <F2> :Explore<CR>
-nnoremap <C-p> :find<Space>
-nnoremap <C-f> :buffer<Space><Tab>
-"Fix & to preserve flags in normal mode
-nnoremap & :&&<CR> 
-"Fix & to preserve flags in visual mode
-xnoremap & :&&<CR> 
-"use <C-j> for inserting new line in normal mode
-nnoremap <NL> i<CR><ESC> 
 
 "WILDMENU
 set wildcharm=<Tab> "Allow usage of wildmenu in mappings
