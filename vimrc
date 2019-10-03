@@ -1,6 +1,7 @@
 call plug#begin()
 Plug 'gosukiwi/vim-atom-dark' "colorscheme
 Plug 'tpope/vim-sensible' "sensible defaults
+Plug 'tpope/vim-unimpaired' "add [ and ] commands
 Plug 'tpope/vim-commentary' "add gcc command
 Plug 'tpope/vim-surround' "add surround commands
 Plug 'wellle/targets.vim' "better targets
@@ -14,14 +15,6 @@ nnoremap <C-p> :find<Space>
 nnoremap <C-f> :buffer<Space><Tab>
 "use <C-j> for inserting new line in normal mode
 nnoremap <NL> i<CR><ESC> 
-
-"UNIMPAIRED
-nnoremap [b :bprev<CR>
-nnoremap ]b :bnext<CR>
-nnoremap [<Space> O<Esc>j
-nnoremap ]<Space> o<Esc>k
-nnoremap [e ddkP 
-nnoremap ]e ddp
 
 "REPEAT SUBSTITUTION FIX
 "Fix & to preserve flags in normal mode
