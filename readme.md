@@ -370,7 +370,8 @@ Search Patterns
     (search) \c - Ignore case sensivity in search pattern
     (search) \C - Force case sensivity to search pattern
 
-    (search) \v - Mode where only underscore, letters and digits are not escapable characters
+    (search) \v - Mode where every special character must be escaped besides underscore, letters and digits
+    (search) \V - Mode where only backslash have a special meaning
     /\v\:[0-9a-zA-z]{3} - Search string starting with :, that has digits or letters in it with length 3
     /\v<the> - Search a word "the" do not include f.ex. "these"
     /\vSea\zsrch - \zs helps to find/highlight every "rch" in every "Search" words
@@ -384,6 +385,13 @@ Substitute
     & - repeat last substitution on current line
     (visual) & - repeat substitution on chosen lines
     g& - repeat substitution on open buffer
+
+Global Commands (Grep)
+
+    :g/Re/p - print all lines containing "Re"
+    :g/Re/d - delete all lines containing "Re"
+    :g//p - print all lines with results of last search
+    :v/Re/p - global in(v)ert, print all lines not containing "Re"
 
 Command-line window
 
