@@ -40,7 +40,8 @@ Autocomplete
 Buffers (open files)
 
     <C-6> - jump between last two buffers
-    :bd - delete/close current buffer
+    :bd - delete (close) current buffer
+    :bw - wipe (remove completly) current buffer
     ]b - next buffer
     [b - prev buffer
 
