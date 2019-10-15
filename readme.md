@@ -386,6 +386,7 @@ Substitute
     & - repeat last substitution on current line
     (visual) & - repeat substitution on chosen lines
     g& - repeat substitution on open buffer
+    :'<,'>&& - repeat substitution on visual selection
 
 Global Commands (Grep)
 
