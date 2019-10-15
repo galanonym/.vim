@@ -1,5 +1,6 @@
 call plug#begin()
 Plug 'gosukiwi/vim-atom-dark' "colorscheme
+
 Plug 'tpope/vim-sensible' "sensible defaults
 Plug 'tpope/vim-unimpaired' "add [ and ] commands
 Plug 'tpope/vim-commentary' "add gcc command
@@ -13,26 +14,16 @@ inoremap jj <Esc>
 nmap <F2> :Explore<CR>
 nnoremap <C-p> :find<Space>
 nnoremap <C-f> :buffer<Space><Tab>
-"use <C-j> for inserting new line in normal mode
-nnoremap <NL> i<CR><ESC> 
-
-"REPEAT SUBSTITUTION FIX
-"Fix & to preserve flags in normal mode
-nnoremap & :&&<CR> 
-"Fix & to preserve flags in visual mode
-xnoremap & :&&<CR> 
 
 "BASICS
 set hidden "files will be hidden and not closed when buffer changes
-set scrolloff=999
+set scrolloff=5 "lines before cursor on scroll
+set report=0 "aways show how many lines has changed
 
 "BACKUP
 set nobackup "get rid of annoying ~file
 set nowb
 set noswapfile
-
-"WILDMENU
-set wildcharm=<Tab> "Allow usage of wildmenu in mappings
 
 "THEME
 set number "line numbers
@@ -55,7 +46,8 @@ set tabstop=2
 set showmatch "highlight search
 set hlsearch "highlight stays after search
 
-"FIND
+"WILDMENU
+set wildcharm=<Tab> "Allow usage of wildmenu in mappings
 set path+=** "adds recursive search to :find command
 
 "NETRW
@@ -65,7 +57,3 @@ autocmd FileType netrw setl bufhidden=delete "fix netrw hanging buffer bug
 "EASYMOTION
 "two characters easymotion line jumps
 map <Space> <Plug>(easymotion-s)
-
-"ENABLE PROJECT VIMRC FILE
-set exrc "execute .vimrc in project location
-set secure "do not allow dangerous commands
