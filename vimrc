@@ -15,10 +15,6 @@ nmap <F2> :Explore<CR>
 nnoremap <C-p> :find<Space>
 nnoremap <C-f> :buffer<Space><Tab>
 
-"PRESERVE SUBSTITUTION FLAGS
-nnoremap & :&&<CR>
-xnoremap & :&&<CR>
-
 "BASICS
 set hidden "files will be hidden and not closed when buffer changes
 set scrolloff=5 "lines before cursor on scroll
@@ -53,6 +49,10 @@ set hlsearch "highlight stays after search
 "WILDMENU
 set wildcharm=<Tab> "Allow usage of wildmenu in mappings
 set path+=** "adds recursive search to :find command
+
+"PRESERVE SUBSTITUTION FLAGS
+nnoremap & :&&<CR>
+xnoremap & :&&<CR>
 
 "NETRW
 let g:netrw_liststyle=3 "tree list style
