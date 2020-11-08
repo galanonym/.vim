@@ -250,7 +250,7 @@ Search
     * - find next word that is same as word on cursor (fast search)
     # - find prev word that is same as word on cursor (fast search)
     /<Up> or /<Down> - scroll through search history
-
+    gn - visually select next selection
 
 Undo/Repeat
 
