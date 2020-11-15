@@ -41,6 +41,7 @@ hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white
 set expandtab "spaces instead of tabs
 set shiftwidth=2 "one tab 2 spaces
 set tabstop=2
+set autoindent "copy indentation from previous line
 
 "SEARCH
 set showmatch "highlight search
