@@ -209,6 +209,7 @@ Replace
     r - replace one char
     R - replace mode, typeover
     <backspace> - restore original character from before typeover
+    xp - swap characters, one under cursor with next one
 
 Yank/Put (Copy/Paste)
 
