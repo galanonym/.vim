@@ -32,10 +32,12 @@ Wildmenu
 
 Autocomplete
 
-    <C-n> - open autocomplete box, then press again to next suggestion
+    (insert) <C-n> - open autocomplete box, then press again to next suggestion
     <C-p> - autocomplete box, previous suggestion
     <C-e> - autocomplete box, exit smoothly
-    <C-x><C-f> - try to autocomplete a file path
+    (insert) <C-x><C-f> - try to autocomplete a file path
+    (insert) <C-x><C-l> - try to autocomplete a whole line
+    (insert) <C-y> - copy a character from the line above to current line
 
 Buffers (open files)
 
