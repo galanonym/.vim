@@ -1,5 +1,5 @@
 call plug#begin()
-Plug 'gosukiwi/vim-atom-dark' "colorscheme
+Plug 'morhetz/gruvbox' "colorscheme
 
 Plug 'tpope/vim-sensible' "sensible defaults
 Plug 'tpope/vim-unimpaired' "add [ and ] commands
@@ -28,14 +28,12 @@ set noswapfile
 "THEME
 set number "line numbers
 set cursorline "highlight line at cursor position
-"matching bracets underlined instead of cursor changing
-hi MatchParen cterm=underline ctermbg=none ctermfg=none
 
 "COLORSCHEME
 set termguicolors "add 256 color support
-colorscheme atom-dark
-"remove white underline from cursorline for atom-dark theme
-hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white
+colorscheme gruvbox
+set background=dark
+let g:gruvbox_contrast_dark='hard'
 
 "TABS
 set expandtab "spaces instead of tabs
