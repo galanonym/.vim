@@ -217,6 +217,7 @@ Yank/Put (Copy/Paste)
 
     yy - yank line (copy)
     yw - yank a word
+    ygn - yank matched pattern after search
     p - paste after (paste above on line)
     P - paste before (paste above on line)
     "+y - yank selection to system clipboard
