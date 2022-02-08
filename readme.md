@@ -228,6 +228,19 @@ Yank/Put (Copy/Paste)
     gp - paste after and place cursor after inserted text
     gP - paste before and place cursor after inserted text
 
+Registers
+
+    "ayy - yank text to register a
+    "ap - paste from register a
+    "Ayy - yank text to !append! register A
+    "Ap - paste text from !append! register A
+    "0p - paste from yank register (last yanked line)
+    :reg - show all registers
+    :reg a - show "a" register
+    ": - last vim command line command
+    ". - last inserted text
+    @: - execute last command (normal mode)
+
 Join
 
     J - join two lines
@@ -304,19 +317,6 @@ Folding
 
     zo - open fold
     zc - close fold
-
-Registers
-
-    "ayy - yank text to register a
-    "ap - paste from register a
-    "Ayy - yank text to !append! register A
-    "Ap - paste text from !append! register A
-    "0p - paste from yank register (last yanked line)
-    :reg - show all registers
-    :reg a - show "a" register
-    ": - last vim command line command
-    ". - last inserted text
-    @: - execute last command (normal mode)
 
 Marks
 
