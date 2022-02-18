@@ -38,6 +38,7 @@ Autocomplete
     (insert) <C-x><C-f> - try to autocomplete a file path
     (insert) <C-x><C-l> - try to autocomplete a whole line
     (insert) <C-y> - copy a character from the line above to current line
+    (insert) <C-e> - copy a character from the line below to current line
 
 Buffers (open files)
 
