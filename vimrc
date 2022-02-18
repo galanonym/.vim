@@ -13,13 +13,13 @@ map <Space> /
 nmap <F2> :Explore<CR>
 nnoremap <C-p> :find<Space>
 nnoremap <C-f> :buffer<Space><Tab>
-" Disable ex mode prompt
-nmap Q <nop>
 
 " BASICS
 set hidden " Files will be hidden and not closed when buffer changes
 set scrolloff=5 " Lines before cursor on scroll
 set report=0 " Aways show how many lines has changed
+" Disable ex mode prompt
+nmap Q <nop>
 
 " BACKUP
 set nobackup " Get rid of annoying ~file
