@@ -1,52 +1,54 @@
 call plug#begin()
-Plug 'morhetz/gruvbox' "colorscheme
+Plug 'morhetz/gruvbox' " Colorscheme
 
-Plug 'tpope/vim-sensible' "sensible defaults
-Plug 'tpope/vim-unimpaired' "add [ and ] commands
-Plug 'tpope/vim-surround' "add surround commands
-Plug 'tomtom/tcomment_vim' "add better gcc command
+Plug 'tpope/vim-sensible' " Sensible defaults
+Plug 'tpope/vim-unimpaired' " Add [ and ] commands
+Plug 'tpope/vim-surround' " Add surround commands
+Plug 'tomtom/tcomment_vim' " Add better gcc command
 call plug#end()
 
-"MAP
+" MAP
 inoremap jj <Esc>
 map <Space> /
 nmap <F2> :Explore<CR>
 nnoremap <C-p> :find<Space>
 nnoremap <C-f> :buffer<Space><Tab>
+" Disable ex mode prompt
+nmap Q <nop>
 
-"BASICS
-set hidden "files will be hidden and not closed when buffer changes
-set scrolloff=5 "lines before cursor on scroll
-set report=0 "aways show how many lines has changed
+" BASICS
+set hidden " Files will be hidden and not closed when buffer changes
+set scrolloff=5 " Lines before cursor on scroll
+set report=0 " Aways show how many lines has changed
 
-"BACKUP
-set nobackup "get rid of annoying ~file
+" BACKUP
+set nobackup " Get rid of annoying ~file
 set nowb
 set noswapfile
 
-"THEME
-set number "line numbers
-set relativenumber "use relative numbers
-set cursorline "highlight line at cursor position
+" THEME
+set number " Line numbers
+set relativenumber " Use relative numbers
+set cursorline " Highlight line at cursor position
 
-"COLORSCHEME
-set termguicolors "add 256 color support
+" COLORSCHEME
+set termguicolors " Add 256 color support
 colorscheme gruvbox
 set background=dark
 
-"TABS
-set expandtab "spaces instead of tabs
-set shiftwidth=2 "one tab 2 spaces
+" TABS
+set expandtab " Spaces instead of tabs
+set shiftwidth=2 " One tab 2 spaces
 set tabstop=2
 
-"SEARCH
-set showmatch "highlight search
-set hlsearch "highlight stays after search
+" SEARCH
+set showmatch " Highlight search
+set hlsearch " Highlight stays after search
 
-"WILDMENU
-set wildcharm=<Tab> "Allow usage of wildmenu in mappings
-set path+=** "adds recursive search to :find command
+" WILDMENU
+set wildcharm=<Tab> " Allow usage of wildmenu in mappings
+set path+=** " Adds recursive search to :find command
 
-"NETRW
-let g:netrw_liststyle=3 "tree list style
-autocmd FileType netrw setl bufhidden=delete "fix netrw hanging buffer bug
+" NETRW
+let g:netrw_liststyle=3 " Tree list style
+autocmd FileType netrw setl bufhidden=delete " Fix netrw hanging buffer bug
