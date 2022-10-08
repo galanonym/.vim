@@ -125,6 +125,8 @@ Targets
     cina - change inside next argument
     cila - change inside last argument
 
+    cgn - change last found search
+
     daa - delete all argument with comma and whitespace around
 
     (test, test, test)
