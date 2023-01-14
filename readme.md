@@ -24,6 +24,7 @@ Help
     :h - open help
     <C-]> - go to tag file in help
     <C-t> - go back in help
+    K - show helper dialog for function / variable under the cursor
 
 Wildmenu
 
