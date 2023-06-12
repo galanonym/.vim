@@ -226,7 +226,8 @@ Yank/Put (Copy/Paste)
     P - paste before (paste above on line)
     "+y - yank selection to system clipboard
     "+p - paste text from system clipboard
-    xp - move char under cursor one forward
+    vi(p - paste inside of parantesis
+    xp - make char under cursor switch places with the one forward
     (visual) p - paste and replace selected text
     (insert) <C-r>0 - paste from 0 register (last yank) inside insert mode
     gp - paste after and place cursor after inserted text
