@@ -130,6 +130,8 @@ Targets
 
     daa - delete all argument with comma and whitespace around
 
+    vi(p - replace (select first) string in paranteses with paste from buffer
+
     (test, test, test)
 
 Movement
